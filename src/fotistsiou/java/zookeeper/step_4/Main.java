@@ -143,7 +143,7 @@ public class Main {
         String[] habitats = {camel, lion, deer, goose, bat, rabbit};
         Scanner scanner = new Scanner(System.in);
         while (true) {
-            System.out.print("Please enter the number of the habitat you would like to view: ");
+            System.out.print("Please enter the number of the habitat you would like to view (0 to " + (habitats.length - 1) + "): ");
             String input = scanner.nextLine().trim();
 
             if (input.equalsIgnoreCase("exit")) {
