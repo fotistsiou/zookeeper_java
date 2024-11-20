@@ -147,19 +147,19 @@ public class Main {
 
         String[] habitats = {camel, lion, deer, goose, bat, rabbit};
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Please enter the number of the habitat you would like to view: ");
-        int index;
+        int index = -1;
         while (true) {
-            if (scanner.hasNextInt()) {
-                index = scanner.nextInt();
+            System.out.print("Please enter the number of the habitat you would like to view (0 to " + (habitats.length - 1) + "): ");
+            String input = scanner.nextLine().trim(); // Read the input as a string
+            try {
+                index = Integer.parseInt(input); // Attempt to parse the input
                 if (index >= 0 && index < habitats.length) {
-                    break;
+                    break; // Valid index, exit the loop
+                } else {
+                    System.out.println("Invalid input. Enter a number between 0 and " + (habitats.length - 1) + ".");
                 }
-                System.out.print("Enter a number from 0 to 5: ");
-                scanner.nextLine();
-            } else {
-                System.out.print("Enter a number from 0 to 5: ");
-                scanner.nextLine();
+            } catch (NumberFormatException e) {
+                System.out.println("Invalid input. Please enter a valid number.");
             }
         }
         System.out.println(habitats[index]);
