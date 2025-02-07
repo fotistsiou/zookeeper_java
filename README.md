@@ -1,7 +1,7 @@
 # Zookeeper with Java
 
 ## Project Details
-> - **Level**: 🌟🌟 Medium | **Time**: 🕒 ~7 hours
+> - **Level**: 🌟🌟 Medium | **Time**: 🕒 ~8 hours
 > - **Course**: [Introduction to Java](https://hyperskill.org/courses/8-introduction-to-java)
 > - **Project**: [Zookeeper with Java](https://hyperskill.org/projects/229?track=8)
 > - **Description**: Help the local zoo take care of its animals by building a tool to keep an eye on them. 
@@ -45,6 +45,7 @@ to get it built. Here’s what awaits you:
   - Stage Topics:
     - Data types and their sizes
     - Type casting
+    - Calling methods
     - Primitive and reference types
     - Array
 - Stage 4/4: Set the program for zoo staff
@@ -53,4 +54,11 @@ to get it built. Here’s what awaits you:
     - Comparing values. Relational operators
     - Conditional statement
     - One-line condition with ternary operator
+    - For loop
     - While and do-while loops
+    - IDE
+    - What are bugs
+    - Debugging overview
+    - IntelliJ IDEA
+    - Run and debug with IntelliJ IDEA
+    - Debugging simple constructs
